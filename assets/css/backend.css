@@ -1,0 +1,286 @@
+@keyframes wpc-spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes wpc-spinner {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes wpcss-spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes wpcss-spinner {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.wpcss-loading {
+    position: relative;
+}
+
+.wpcss-loading:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -15px;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 100%;
+    border-top-color: rgba(0, 0, 0, 0.5);
+    border-left-color: rgba(0, 0, 0, 0.1);
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+    border-right-color: rgba(0, 0, 0, 0.1);
+    animation: wpcss-spinner 1s linear infinite;
+    -webkit-animation: wpcss-spinner 1s linear infinite;
+}
+
+.wpcss-loading:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    pointer-events: none;
+}
+
+.wpcss-shared-carts .wpcss-shared-cart .wpcss-shared-cart-view .dashicons {
+    font-size: 12px;
+    vertical-align: baseline;
+}
+
+.wpcss-shared-carts table.widefat thead tr td {
+    border-bottom: 1px solid #c3c4c7;
+}
+
+.wpcss-shared-carts.wpcss-shared-carts-premium {
+    position: relative;
+}
+
+.wpcss-shared-carts.wpcss-shared-carts-premium .tablenav, .wpcss-shared-carts.wpcss-shared-carts-premium table {
+    opacity: 0.5 !important;
+    pointer-events: none !important;
+}
+
+.wpcss-edit-cart-shortcode {
+    padding: 10px;
+    background-color: #f6f7f7;
+    border-bottom: 1px solid #dddddd;
+}
+
+.wpcss-edit-cart-shortcode .wpcss-edit-cart-shortcode-inner {
+    display: flex;
+    align-items: center;
+}
+
+.wpcss-edit-cart-shortcode .wpcss-edit-cart-shortcode-inner span {
+    margin-right: 10px;
+}
+
+.wpcss-edit-cart-items .wpcss-edit-cart-item {
+    padding: 5px 30px 5px 10px;
+    position: relative;
+    border-bottom: 1px dashed #dddddd;
+}
+
+.wpcss-edit-cart-items .wpcss-edit-cart-item:nth-child(2n+2) {
+    background-color: #f6f7f7;
+}
+
+.wpcss-edit-cart-items .wpcss-edit-cart-item .wpcss-edit-cart-item-name {
+    font-weight: bold;
+}
+
+.wpcss-edit-cart-items .wpcss-edit-cart-item .wpcss-edit-cart-item-data {
+    opacity: 0.5;
+}
+
+.wpcss-edit-cart-items .wpcss-edit-cart-item .wpcss-edit-cart-item-remove {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    margin-top: -10px;
+}
+
+.wpcss-edit-cart-items .wpcss-edit-cart-item dl {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.wpcss-edit-cart-items .wpcss-edit-cart-item dl dd, .wpcss-edit-cart-items .wpcss-edit-cart-item dl dt {
+    display: inline-block;
+    margin: 0 5px 0 0;
+    padding: 0;
+}
+
+.wpcss-edit-cart-items .wpcss-edit-cart-item dl dd p, .wpcss-edit-cart-items .wpcss-edit-cart-item dl dt p {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.wpcss-add-cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.wpcss-add-cart-item-form {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.wpcss-add-cart-item-form > div {
+    padding: 5px 0;
+}
+
+.wpcss-add-cart-item-search-result ul {
+    margin: 0;
+    padding: 0;
+}
+
+.wpcss-add-cart-item-search-result ul li {
+    list-style: none;
+    padding: 10px 30px 10px 10px;
+    margin: 0;
+    border-bottom: 1px dashed #dddddd;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.wpcss-add-cart-item-search-result ul li:nth-child(2n+2) {
+    background-color: #f6f7f7;
+}
+
+.wpcss-add-cart-item-search-result ul li .wpcss-add {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    margin-top: -10px;
+}
+
+/* WPC Dialog */
+.ui-dialog.wpc-dialog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100102;
+    background-color: #fff;
+    border: 1px solid #dfdfdf;
+    border-radius: 0;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    color: #3c434a;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 13px;
+    line-height: 1.4em;
+}
+
+.ui-dialog.wpc-dialog .ui-dialog-titlebar {
+    background: #fcfcfc;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #dfdfdf;
+    border-radius: 0;
+    height: 36px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 36px;
+    padding: 0 36px 0 16px;
+}
+
+.ui-dialog.wpc-dialog .ui-dialog-titlebar .ui-dialog-title {
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ui-dialog.wpc-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close {
+    background: 0 0;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #666;
+    cursor: pointer;
+    display: block;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    outline: none;
+    overflow: hidden;
+    font-size: 0;
+}
+
+.ui-dialog.wpc-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close:before {
+    font: 400 20px/1 dashicons;
+    vertical-align: top;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 36px;
+    width: 36px;
+    height: 36px;
+    content: "\f158";
+}
+
+.ui-dialog.wpc-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close:hover {
+    color: #00a0d2;
+}
+
+.ui-dialog.wpc-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close span {
+    display: none;
+}
+
+.ui-dialog.wpc-dialog .ui-dialog-content {
+    padding: 16px;
+    overflow: auto;
+}
+
+/*# sourceMappingURL=backend.css.map */
